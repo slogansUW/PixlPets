@@ -7,7 +7,15 @@ form.addEventListener("submit", async (event) => {
   try {
     const response = await fetch(`https://www.thepixlverse.io/pixlpets/${pixlpetId}`);
     const data = await response.json()
-    result.innerHTML = JSON.stringify(data);
+    const isHatched = data.attributes.some(
+      (attribute) => attribute.trait_type === "Egg" && attribute.value === "Hatched"
+    );
+    if (isHatched) {
+      result.innerHTML = "Don't get bamboozled. The eggs been hatched anon, refresh the meta data.<br>ARF";
+    } else {
+      result.innerHTML = "Anon, its not hatched. Don't be a coward, scoop it before they hatch.<br>ARF";
+    }
+    
   } catch (error) {
     result.innerHTML = "Error: " + error.message;
   }

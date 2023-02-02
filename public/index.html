@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pixlpet Lookup</title>
+  <title>Hatched Egg Detector</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <h1>Pixlpet Lookup</h1>
+  <h1>Is it hatched?</h1>
   <form>
-    <label for="pixlpetId">Enter Pixlpet ID:</label>
-    <input type="text" id="pixlpetId">
+    <input type="text" id="pixlpetId" value="Enter Pixlpet ID (1-15,000)" 
+           onfocus="this.value=''" 
+           pattern="[1-9]|[1-9][0-9]{1,4}|15000" required
+           autocomplete="on">
     <button type="submit">Submit</button>
   </form>
   <div id="result"></div>
+  <div id="image-container" style="position: absolute; bottom: 0; left: 0; right: 0;">
+    <img id="klentsloganjpg" src="klentslogan.jpg" alt="Pixlpet Image" width="100" height="100" style="border-radius: 100px;">
+    <p id="credit">klentslogan.eth built this leveraging the existing pixlverse api.<br>See you in Arfhalla.</p>
+  </div>
 
   <script src="index.js"></script>
 </body>

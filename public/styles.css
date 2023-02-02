@@ -1,0 +1,53 @@
+  body {
+    background-color: #161616;
+    color: #fafafa;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 50px;
+    font-size: 75px;
+    font-family: 'VT323', monospace;
+  }
+  form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+    font-family: 'VT323', monospace;
+  }
+  label {
+    font-size: 25px;
+    display: block;
+    font-family: 'VT323', monospace;
+  }
+  input[type="text"] {
+    padding: 10px;
+    font-size: 22px;
+    margin-top: 10px;
+    width: 250px;
+    border: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'VT323', monospace;
+  }
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4c4c4c;
+    color: #fafafa;
+    border: whitesmoke;
+    border-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+  }
+  #result {
+    margin-top: 50px;
+    margin-bottom: 500px;
+    font-size: 36px;
+    color: #c8dfe6;
+    font-family: 'VT323', monospace;
+  }
+  #credit {
+    font-size: 25px;
+    color: #c8dfe6;
+    font-family: 'VT323', monospace;
+  }
