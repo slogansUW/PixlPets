@@ -11,9 +11,9 @@ form.addEventListener("submit", async (event) => {
       (attribute) => attribute.trait_type === "Egg" && attribute.value === "Hatched"
     );
     if (isHatched) {
-      result.innerHTML = "Don't get bamboozled. The eggs been hatched anon, refresh the meta data.<br>ARF";
+      result.innerHTML = "Query for Pixl Pet #" + pixlpetId + "<br><br>Don't get bamboozled. The eggs been hatched anon, refresh the meta data.<br>ARF";
     } else {
-      result.innerHTML = "Anon, its not hatched. Don't be a coward, scoop it before they hatch.<br>ARF";
+      result.innerHTML = "Query for Pixl Pet #" + pixlpetId + "<br><br>Anon, its not hatched. Don't be a coward, scoop it before they hatch.<br>ARF";
     }
     
   } catch (error) {
