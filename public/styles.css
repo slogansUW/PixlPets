@@ -4,32 +4,24 @@
     text-align: center;
   }
   h1 {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 75px;
     font-family: 'VT323', monospace;
   }
   form {
-    margin-top: 20px;
     display: inline-block;
     text-align: left;
-    font-family: 'VT323', monospace;
-  }
-  label {
-    font-size: 25px;
-    display: block;
     font-family: 'VT323', monospace;
   }
   input[type="text"] {
     padding: 10px;
     font-size: 22px;
-    margin-top: 10px;
     width: 250px;
     border: rgb(0, 0, 0);
     border-radius: 10px;
     font-family: 'VT323', monospace;
   }
   button[type="submit"] {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #4c4c4c;
     color: #fafafa;
@@ -41,12 +33,20 @@
   }
   #result {
     margin-top: 50px;
-    margin-bottom: 500px;
-    font-size: 36px;
+    font-size: 32px;
     color: #c8dfe6;
     font-family: 'VT323', monospace;
   }
+  #sealjpg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
   #credit {
+    display: block;
+    margin: 20px auto 0;
+    margin-bottom: 10px;
+    text-align: center;
     font-size: 25px;
     color: #c8dfe6;
     font-family: 'VT323', monospace;
